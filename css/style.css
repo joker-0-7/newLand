@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    direction: rtl;
+    height: 2000px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.header{
+    height: 80px;
+}
+.header .container{
+    height: inherit;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .container img{
+    width: 70px;
+    margin-right: 40px;
+}
+.af-header{
+    height: calc(100vh - 80px);
+    background-image: url(../img/pexels-karolina-grabowska-4239032.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.af-header .container{
+    position: relative;
+    text-align: center;
+}
+.over {
+    position: absolute;
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.af-header .info{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 900px;
+}
+.af-header .info h1,
+.af-header .info h2{
+    line-height: 2;
+    z-index: 999;
+}
+.contact,
+.more-sevice{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.more-sevice{
+    bottom: 30%;
+}
+.contact a,
+.more-sevice a,
+.contact-us a{
+    width: 380px;
+    height: 60px;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+.service{
+    padding: 15px 0 ;
+}
+.service .row{
+    margin-right: 65px;
+}
+.service .container .heading{
+    width: fit-content;
+    margin: 50px auto;
+    position: relative;
+}
+.service .container .heading::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+}
+.colms{
+    padding-top: 20px;
+}
+.title-card{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: fit-content;
+}
+.card {
+    margin-bottom: 30px;
+    max-width: 500px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.info-card{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-card svg{
+    font-size: 30px;
+}
+.drop{
+    padding: 10px 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+}
+.accordion-button::after{
+    position: absolute;
+    left: 10px;
+}
+.contact-us{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul li {
+    font-size: 19px;
+}
+
+.booking{
+    height: 100vh;
+    background-image: url('../img/pexels-andrea-piacquadio-3760810.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.booking .container{
+    text-align: center;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.booking .over {
+    height: 100%;
+}
+.booking .container .para{
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 99;
+}
+.contact-us{
+    z-index: 999;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+    .site-footer
+    {
+    padding-bottom:0
+}
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+@media (max-width:767px){
+    .header{
+        height: 90px;
+    }
+    .header .container{
+        height: inherit;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .header .container img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .header .container .title h3{
+        font-size: 16px;
+        text-align: center;
+    }
+    .af-header{
+        height: calc(100vh - 90px);
+        background-image: url(../img/pexels-karolina-grabowska-4239032.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .af-header .container{
+        position: relative;
+        text-align: center;
+    }
+    .over {
+        position: absolute;
+        height: calc(100vh - 90px);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .af-header .info{
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 360px;
+    }
+    .af-header .info h1,
+    .af-header .info h2{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .contact,
+    .more-sevice{
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .more-sevice{
+        bottom: 20%;
+    }
+    .contact a,
+    .more-sevice a,
+    .contact-us a{
+        width: 280px;
+        height: 40px;
+        line-height: 25px;
+        font-size: 20px;
+    
+    }
+    .service{
+        padding: 15px 0 ;
+    }
+    .service .row{
+        margin-right: -15px;
+        
+    }
+    .service .container .heading{
+        width: fit-content;
+        margin: 50px auto;
+        position: relative;
+    }
+    .title-card{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: fit-content;
+    }
+    .card {
+        margin-bottom: 30px;
+        max-width: 500px;
+        height: 180px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .info-card{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .icon-card svg{
+        font-size: 30px;
+    }
+    .drop{
+        padding: 10px 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+    .accordion-button::after{
+        position: absolute;
+        left: 10px;
+    }
+    .contact-us{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul li {
+        font-size: 19px;
+    }
+    
+    .booking{
+        height: 100vh;
+        background-image: url('../img/pexels-andrea-piacquadio-3760810.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .booking .container{
+        text-align: center;
+        height: inherit;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .booking .over {
+        height: 100%;
+    }
+    .booking .container .para{
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        z-index: 99;
+    }
+    .contact-us{
+        z-index: 999;
+    }
+}
