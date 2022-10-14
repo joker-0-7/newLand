@@ -125,7 +125,7 @@ body{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    height: 80vh;
+    height: auto;
 }
 .accordion-button::after{
     position: absolute;
